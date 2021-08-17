@@ -1,0 +1,16 @@
+{
+  "name": "lyricsapi",
+  "version": "1.0.0",
+  "description": "for my work",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm index.js"
+  },
+  "author": "rohit nishad",
+  "license": "ISC",
+  "dependencies": {
+    "dom-parser": "^0.1.6",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}
