@@ -4,7 +4,8 @@
   "description": "for my work",
   "main": "index.js",
   "scripts": {
-    "test": "npm index.js"
+    "test": "node index.js",
+    "start": "node index.js"
   },
   "author": "rohit nishad",
   "license": "ISC",
