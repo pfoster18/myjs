@@ -3,7 +3,7 @@ const DomParser = require('dom-parser');
 const parser = new DomParser();
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (request, response) => {
     const url = request.query.url;
@@ -19,7 +19,7 @@ app.get('/', (request, response) => {
       }
       var t = 0;
       body = body.replace(/document.write/g, function (match) {
-         t++;
+         t++;  
          return (t === 2) ? "guess" : match;
       });
       body = body.replace(/document.write/g, 'skipp');
